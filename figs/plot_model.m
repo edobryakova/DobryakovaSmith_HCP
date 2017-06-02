@@ -13,7 +13,7 @@ end
 %y = 2*(x - min(x(:))/(max(x(:)) - min(x(:))) - 1);
 %normed_design = y;
 for i = 1:size(normed_design,2)
-    normed_design(:,i) = normed_design(:,i) + i*1.5; %sets the spacing without changing variance/range
+    normed_design(:,i) = normed_design(:,i) + i*1.25; %sets the spacing without changing variance/range
     %plot(normed_design(:,i))
 end
 figure,plot(normed_design)
