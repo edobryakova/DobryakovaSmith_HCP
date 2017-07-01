@@ -29,3 +29,8 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/osx
+
+# other files/folders
+
+*.m~
+data
