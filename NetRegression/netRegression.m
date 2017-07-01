@@ -28,3 +28,12 @@ for s = 1:length(subnums)
     end
 end
 
+DMN = resultsmat(:,1:2);
+ECN = resultsmat(:,3:4);
+LFPN = resultsmat(:,5:6);
+RFPN = resultsmat(:,7:8);
+
+myN = length(DMN);
+figure,barweb_dvs2([mean(DMN); mean(ECN); mean(LFPN); mean(RFPN)], [std(DMN)/sqrt(myN); std(ECN)/sqrt(myN); std(LFPN)/sqrt(myN); std(RFPN)/sqrt(myN)])
+
+
